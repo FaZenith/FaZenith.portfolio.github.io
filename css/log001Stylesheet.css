@@ -1,0 +1,183 @@
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-image: url(../images/overlayBG.png);
+    background-repeat: repeat;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus, .overlay .closebtn:hover {
+    color: #7F8C8D;
+}
+
+.overlay .closebtn {
+  opacity: .7;
+  font-size: 3.2em;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  top: 1px;
+  right: 4px;
+}
+.overlay .topHead {
+  color: #ccc;
+  padding-top: 9px;
+  padding-left: -2px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+
+
+}
+
+.overlay img {
+  transition: filter .4s;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.overlay img:hover{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+.burger {
+  font-size: 1.4em;
+  cursor: pointer;
+  background-color: transparent;
+  position: fixed;
+  top: 26px;
+  right: 17px;
+  z-index: 9;
+}
+.burger-colorB{
+  color: #404040;
+}
+.burger-colorW{
+  color: #aaa;
+}
+
+.gliph-mod{
+  font-size: 23px;
+  text-decoration: none;
+  color: black;
+  opacity: .5;
+  transition: opacity .4s ease-in;
+}
+.gliph-mod:hover{
+  opacity: 1;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    font-size: 1.35em;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+/*Hover on overlay Presets*/
+.go a.ch:before,
+.go a.ch:after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+#active{
+  color: gray;
+  text-decoration: none;
+}
+.go a.ch:before {
+    margin-right: 15px;
+    content: url(../images/bracket.svg);
+    -webkit-transform: translate(20px);
+    -moz-transform: translate(20px);
+    transform: translate(20px);
+}
+
+.go a.ch:after {
+    margin-left: 15px;
+    content: url(../images/bracket.svg);
+    -webkit-transform: translate(-20px);
+    -moz-transform: translate(-20px);
+    transform: translate(-20px);
+}
+
+.go a.ch:hover:before,
+.go a.ch:hover:after,
+.go a.ch:focus:before,
+.go a.ch:focus:after {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    transform: translate(0px);
+}
+
+.handHover{
+  cursor: pointer;
+}
+
+/**************************************/
+/* Open+Sans:300,600|Raleway:200,400,500 */
+
+h1{font-family: 'Raleway', sans-serif; font-weight: 400; font-size: 56px; letter-spacing: 3px;}
+h2{font-family: 'Raleway', sans-serif; font-weight: 300; font-size: 45px; letter-spacing: 3px;}
+h3{font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 36px; letter-spacing: 3px;}
+h4{font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 25px; letter-spacing: 3px;}
+h5{font-family: 'Raleway', sans-serif; font-weight: 400; font-size: 20px; letter-spacing: 3px;}
+h6{font-family: 'Raleway', sans-serif; font-weight: 400;font-size: 17px; letter-spacing: 2px;}
+p{ font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 15px; letter-spacing: 2px;}
+
+@media only screen and (max-width:550px) {
+
+  .nav .items div span { display: none;}
+  #dummy {display: none;}
+	#navigation .label{display: none;}
+
+	h1{font-size: 35px; letter-spacing: 1px;}
+	h2{font-size: 30px; letter-spacing: 1px;}
+	h3{font-size: 25px; letter-spacing: 1px;}
+	h4{font-size: 20px; letter-spacing: 1px;}
+	h5{font-size: 15px; letter-spacing: 1px;}
+	h6{font-size: 12px;}
+	p{font-size: 10px;}
+
+}
+section {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
