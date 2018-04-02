@@ -85,6 +85,7 @@ $(document).ready(function() {
 
       if (percent == '0') {
         updateColorB()
+        $("a.prev span.glyphicon").removeClass("glyphicon-menu-up");
       }else if (percent == '-100') {
         updateColorW()
       }else if (percent == '-200') {
@@ -98,6 +99,8 @@ $(document).ready(function() {
       }else if (percent == '-600') {
         updateColorW()
       }else if (percent == '-600') {
+        updateColorB()
+      }else if (percent == '-700') {
         updateColorB()
       }
 
@@ -126,6 +129,7 @@ $(document).ready(function() {
   }
   function updateColorB()
   {
+    $("a.prev span.glyphicon").addClass("glyphicon-menu-up");
     $("a.prev span.glyphicon").addClass("navib");
     $("a.next span.glyphicon").addClass("navib");
     $("a.prev span.glyphicon").removeClass("naviw");
@@ -142,6 +146,7 @@ $(document).ready(function() {
   }
   function updateColorW()
   {
+    $("a.prev span.glyphicon").addClass("glyphicon-menu-up");
     $("a.prev span.glyphicon").addClass("naviw");
     $("a.next span.glyphicon").addClass("naviw");
     $("a.prev span.glyphicon").removeClass("navib");
