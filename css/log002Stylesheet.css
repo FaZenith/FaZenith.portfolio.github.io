@@ -62,7 +62,7 @@
 }
 
 a,.handHover:link {
-    color: white;
+    color: gray;
     background-color: transparent;
     text-decoration: none;
 }
