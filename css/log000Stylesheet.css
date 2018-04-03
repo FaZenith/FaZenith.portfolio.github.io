@@ -67,7 +67,6 @@ img {
 /**************************************/
 
 .section{
-    min-height:100%;
     position:relative;
 }
 .lrMargin{
