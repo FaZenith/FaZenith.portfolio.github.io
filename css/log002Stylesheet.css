@@ -82,13 +82,7 @@ a,.handHover:active {
     text-decoration: none;
 }
 
-.preset {
-    height: 720px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .parallax {
     /* The image used */
     background-image: url(../images/topBG.jpg);
