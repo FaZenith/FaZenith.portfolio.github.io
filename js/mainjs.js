@@ -34,7 +34,6 @@ $(document).ready(function(){
 			var activeSection = $('#navigation a[href="#'+$this.attr('id')+'"]').data('number') - 1;
 			if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
 				navigation_items.eq(activeSection).addClass('is-selected');
-        console.log(activeSection);
 
         if (activeSection == '0') {
           changecolorB()
