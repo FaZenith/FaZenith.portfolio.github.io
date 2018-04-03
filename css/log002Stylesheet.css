@@ -8,6 +8,7 @@
 }
 /*Bar Graph*/
 .barBack{
+  margin-left: 8px;
 	background-color: #7f8c8d;
 	height: 8px;
 	display: block;
@@ -38,7 +39,7 @@
 	height: 6px;
 	width: 0%;
 	position: absolute;
-	transition: all 1.3s ease-in;
+	transition: all .6s ease-in;
 }
 .barMain100U{width: 100%;}
 .barMain90U{width: 90%;}
@@ -60,25 +61,21 @@
 .iconC:hover{
   opacity: .9;
 }
-
 a,.handHover:link {
     color: gray;
     background-color: transparent;
     text-decoration: none;
 }
-
 a,.handHover:visited {
     color: gray;
     background-color: transparent;
     text-decoration: none;
 }
-
 a,.handHover:hover {
     color: #7F8C8D;
     background-color: transparent;
     text-decoration: none;
 }
-
 a,.handHover:active {
     color: gray;
     background-color: transparent;
@@ -88,7 +85,7 @@ a,.handHover:active {
 
 .parallax {
     /* The image used */
-    background-image: url(../images/testBG.png);
+    background-image: url(../images/topBG.jpg);
 
     /* Set a specific height */
     min-height: 100%;
@@ -129,94 +126,22 @@ a,.handHover:active {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0.75) 100%); /* ff3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,0,0,0.45)), color-stop(1%, rgba(0,0,0,0.45)), color-stop(100%, rgba(0,0,0,0.75))); /* safari4+,chrome */
-  background:-webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0.75) 100%); /* safari5.1+,chrome10+ */
-  background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0.75) 100%); /* opera 11.10+ */
-  background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0.75) 100%); /* ie10+ */
-  background:radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0.75) 100%); /* w3c */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.55) 1%, rgba(0,0,0,0.6) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, rgba(0,0,0,0.55)), color-stop(100%, rgba(0,0,0,0.6))); /* safari4+,chrome */
+  background:-webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.55) 1%, rgba(0,0,0,0.6) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.55) 1%, rgba(0,0,0,0.6) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.55) 1%, rgba(0,0,0,0.6) 100%); /* ie10+ */
+  background:radial-gradient(ellipse at center, rgba(0,0,0,0.55) 1%, rgba(0,0,0,0.6) 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
 }
 
-.body01set {
-  background-color: black;
-  overflow: hidden;
-}
-canvas{
-  z-index: -5;
-}
-.overlaySub {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(0,0,0,0.45) 100%); /* ff3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,0.45))); /* safari4+,chrome */
-  background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(0,0,0,0.45) 100%); /* safari5.1+,chrome10+ */
-  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(0,0,0,0.45) 100%); /* opera 11.10+ */
-  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(0,0,0,0.45) 100%); /* ie10+ */
-  background:radial-gradient(ellipse at center, rgba(255,255,255,0) 0%, rgba(0,0,0,0.45) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
-  overflow-y: hidden;
-  opacity: .2;
-}
-.overlayMain {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  overflow-y: hidden;
-}
-
-.page2{
-  background: -moz-linear-gradient(45deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(31,31,31,1) 9%, rgba(31,31,31,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(127,140,141,1)), color-stop(9%, rgba(127,140,141,1)), color-stop(9%, rgba(31,31,31,1)), color-stop(100%, rgba(31,31,31,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(45deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(31,31,31,1) 9%, rgba(31,31,31,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(45deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(31,31,31,1) 9%, rgba(31,31,31,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(45deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(31,31,31,1) 9%, rgba(31,31,31,1) 100%); /* ie10+ */
-  background: linear-gradient(45deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(31,31,31,1) 9%, rgba(31,31,31,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1F1F1F', endColorstr='#7F8C8D',GradientType=1 ); /* ie6-9 */
-}
-.page3{
-  background: -moz-linear-gradient(315deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(127,140,141,1)), color-stop(9%, rgba(127,140,141,1)), color-stop(9%, rgba(242,242,242,1)), color-stop(100%, rgba(242,242,242,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(315deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(315deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(315deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%); /* ie10+ */
-  background: linear-gradient(135deg, rgba(127,140,141,1) 0%, rgba(127,140,141,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F8C8D', endColorstr='#F2F2F2',GradientType=1 ); /* ie6-9 */
-}
-.page3 div.contentH div.col-xs-12 .col-sm-4 h1,h5,h6{
-  color: #404040;
-}
-.page4{
-  background-color: #1f1f1f;
-}
-.page6{
-  background: -moz-linear-gradient(135deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 9%, rgba(3,3,3,1) 9%, rgba(3,3,3,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(3,3,3,1)), color-stop(90%, rgba(3,3,3,1)), color-stop(91%, rgba(31,31,31,1)), color-stop(100%, rgba(31,31,31,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(135deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 9%, rgba(3,3,3,1) 9%, rgba(3,3,3,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(135deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 9%, rgba(3,3,3,1) 9%, rgba(3,3,3,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(135deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 9%, rgba(3,3,3,1) 9%, rgba(3,3,3,1) 100%); /* ie10+ */
-  background: linear-gradient(315deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 9%, rgba(3,3,3,1) 9%, rgba(3,3,3,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030303', endColorstr='#1f1f1f',GradientType=1 ); /* ie6-9 */
-}
-.page7{
-  background-color: #1f1f1f;
-}
-.page8{
-background-color: #f2f2f2;
-}
 .contentBox {
   width: 100%;
   border-radius: 1px;
   display: inline-block;
   position: relative;
   border: 1px solid #7f8c8d;
+  margin-bottom: 13px;
 }
 .contBox {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -225,6 +150,7 @@ background-color: #f2f2f2;
 .contBox .textfield{
     float: left;
     padding-left: 10px;
+    padding-bottom: 5px;
     display: inline-block;
 }
 .contBox:hover {
