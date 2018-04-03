@@ -52,7 +52,9 @@ html * {
   box-sizing: border-box;
 }
 
-
+body, html {
+  width: 100%;
+}
 
 a {
   color: #3e3947;
@@ -65,7 +67,7 @@ img {
 /**************************************/
 
 .section{
-
+    min-height:100%;
     position:relative;
 }
 .lrMargin{
